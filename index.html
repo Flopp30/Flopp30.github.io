@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,73 +9,75 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 
     <title>Изменение профиля</title>
-  </head>
-  <body>
-    <div class="container">
-      <h2 class="my-5">Изменение профиля</h2>
+</head>
+<body>
+<div class="container">
+    <h2 class="my-5">Изменение профиля</h2>
 
-      <form>
-<!--        <div class="form-group">-->
-<!--          <label for="first-name">First Name</label>-->
-<!--          <input type="text" class="form-control" id="first-name" placeholder="Enter your first name">-->
-<!--        </div>-->
+    <form id="edit-profile-form" class="mb-5">
+        <!--        <div class="form-group">-->
+        <!--          <label for="first-name">First Name</label>-->
+        <!--          <input type="text" class="form-control" id="first-name" placeholder="Enter your first name">-->
+        <!--        </div>-->
 
-<!--        <div class="form-group">-->
-<!--          <label for="last-name">Last Name</label>-->
-<!--          <input type="text" class="form-control" id="last-name" placeholder="Enter your last name">-->
-<!--        </div>-->
+        <!--        <div class="form-group">-->
+        <!--          <label for="last-name">Last Name</label>-->
+        <!--          <input type="text" class="form-control" id="last-name" placeholder="Enter your last name">-->
+        <!--        </div>-->
 
         <div class="form-group">
-          <label for="professional-role">Название специальности</label>
-          <input type="text" class="form-control" id="professional-role" placeholder="Специальность" required>
+            <label for="professional_role">Название специальности</label>
+            <input type="text" class="form-control" id="professional_role" placeholder="Специальность" required>
         </div>
 
         <div class="form-group">
-          <label for="grade">Грейд</label>
-          <select class="form-control" id="grade" required>
-            <option value="">Выберите свой грейд</option>
-            <option value="trainee">Стажер</option>
-            <option value="junior">Junior</option>
-            <option value="middle">Middle</option>
-            <option value="senior">Senior</option>
-          </select>
+            <label for="grade">Грейд</label>
+            <select class="form-control" id="grade" required>
+                <option value="">Выберите свой грейд</option>
+                <option value="trainee">Стажер</option>
+                <option value="junior">Junior</option>
+                <option value="middle">Middle</option>
+                <option value="senior">Senior</option>
+            </select>
         </div>
 
         <div class="form-group">
-          <label for="work_type">Формат работы</label>
-          <select class="form-control" id="work_type">
-            <option value="">Все</option>
-            <option value="remote">Удаленная</option>
-            <option value="part-time">Частичная занятость</option>
-            <option value="full-time">Полный рабочий день</option>
-          </select>
+            <label for="work_type">Формат работы</label>
+            <select class="form-control" id="work_type">
+                <option value="">Все</option>
+                <option value="Стажировка">Стажировка</option>
+                <option value="Частичная занятость">Частичная занятость</option>
+                <option value="Проектная работа">Проектная работа</option>
+                <option value="Полная занятость">Полная занятость</option>
+            </select>
         </div>
 
         <div class="form-group">
-          <label for="region">Регион</label>
-          <input type="text" class="form-control" id="region" placeholder="Регион поиска">
+            <label for="region">Регион</label>
+            <input type="text" class="form-control" id="region" placeholder="Регион поиска">
         </div>
 
         <div class="form-group">
-          <label for="salary-from">Зарплата от</label>
-          <input type="number" class="form-control" id="salary-from" placeholder="1000">
+            <label for="salary_from">Зарплата от</label>
+            <input type="number" class="form-control" id="salary_from" placeholder="1000" required>
         </div>
 
         <div class="form-group">
-          <label for="salary-to">Зарплата до</label>
-          <input type="number" class="form-control" id="salary-to" placeholder="10000">
+            <label for="salary_to">Зарплата до</label>
+            <input type="number" class="form-control" id="salary_to" placeholder="10000" required>
         </div>
 
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="relocation">
-          <label class="form-check-label" for="relocation">Готов к релокации?</label>
+            <input type="checkbox" class="form-check-input" id="ready_for_relocation">
+            <label class="form-check-label" for="ready_for_relocation">Готов к переезду?</label>
         </div>
-          <button type="submit" class="btn btn-primary">Изменить</button>
-          <button type="button" class="btn btn-secondary">Отмена</button>
-		</form>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <button id="btn-submit" class="btn btn-primary d-none">Изменить</button>
+    </form>
+</div>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
