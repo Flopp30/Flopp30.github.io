@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <title>Изменение профиля</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="my-5">Изменение профиля</h2>
+
+      <form>
+<!--        <div class="form-group">-->
+<!--          <label for="first-name">First Name</label>-->
+<!--          <input type="text" class="form-control" id="first-name" placeholder="Enter your first name">-->
+<!--        </div>-->
+
+<!--        <div class="form-group">-->
+<!--          <label for="last-name">Last Name</label>-->
+<!--          <input type="text" class="form-control" id="last-name" placeholder="Enter your last name">-->
+<!--        </div>-->
+
+        <div class="form-group">
+          <label for="professional-role">Название специальности</label>
+          <input type="text" class="form-control" id="professional-role" placeholder="Специальность" required>
+        </div>
+
+        <div class="form-group">
+          <label for="grade">Грейд</label>
+          <select class="form-control" id="grade" required>
+            <option value="">Выберите свой грейд</option>
+            <option value="trainee">Стажер</option>
+            <option value="junior">Junior</option>
+            <option value="middle">Middle</option>
+            <option value="senior">Senior</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="work_type">Формат работы</label>
+          <select class="form-control" id="work_type">
+            <option value="">Все</option>
+            <option value="remote">Удаленная</option>
+            <option value="part-time">Частичная занятость</option>
+            <option value="full-time">Полный рабочий день</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="region">Регион</label>
+          <input type="text" class="form-control" id="region" placeholder="Регион поиска">
+        </div>
+
+        <div class="form-group">
+          <label for="salary-from">Зарплата от</label>
+          <input type="number" class="form-control" id="salary-from" placeholder="1000">
+        </div>
+
+        <div class="form-group">
+          <label for="salary-to">Зарплата до</label>
+          <input type="number" class="form-control" id="salary-to" placeholder="10000">
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="relocation">
+          <label class="form-check-label" for="relocation">Готов к релокации?</label>
+        </div>
+          <button type="submit" class="btn btn-primary">Изменить</button>
+          <button type="button" class="btn btn-secondary">Отмена</button>
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
